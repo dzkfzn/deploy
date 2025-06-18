@@ -1,4 +1,8 @@
 services:
+  hummingbot-image-puller:
+    image: hummingbot/hummingbot:latest
+    command: tail -f /dev/null
+    restart: "no"
   dashboard:
     container_name: dashboard
     image: hummingbot/dashboard:latest
